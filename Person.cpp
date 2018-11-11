@@ -29,7 +29,14 @@ Person<ItemType>::~Person()
 template<class ItemType>
 void Person<ItemType>::setCustomerName(ItemType CustomerName)
 {
-
+    customerName = CustomerName;
 }
+
+template<class ItemType>
+ItemType Person<ItemType>::getCustomerName()
+{
+    return customerName;
+}
+
 
 
