@@ -5,6 +5,18 @@ using namespace std;
 
 class PhoneNumber : public Person{
 
+private:
+    ItemType NidNumber;
+    ItemType PhoneNumber;
+
+public:
+    PhoneNumber();
+    ~PhoneNumber();
+    void setNidNumber(ItemType NidNumber);
+    ItemType getNidNumber();
+    void setPhoneNumber(ItemType PhoneNumber);
+    ItemType getPhoneNumber();
+
 
 
 };
