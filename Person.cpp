@@ -26,6 +26,10 @@ Person<ItemType>::~Person()
 
 }
 
-//template<class ItemType>
+template<class ItemType>
+void Person<ItemType>::setCustomerName(ItemType CustomerName)
+{
+
+}
 
 
