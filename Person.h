@@ -3,7 +3,7 @@
 
 #include<string>
 
-const int MAX_ITEMS = 2;
+const int MAX_ITEMS = 15;
 
 using namespace std;
 
@@ -13,18 +13,30 @@ class Person
 public:
     Person();
     ~Person();
-    void setCustomerName();
-    void setFathersName();
-    void setMothersName();
-    void setMaritalStatus();
-    void setNationalId();
-    void setSpouseName();
-    void setPresentAddress();
-    void setPermanentAddress();
-    void setHeight();
-    void setWeight();
-    void setEyeColor();
-    void setHairColor();
+    void setCustomerName(ItemType CustomerName);
+    void getCustomerName();
+    void setFathersName(ItemType FathersName);
+    void getFathersName();
+    void setMothersName(ItemType MothersName);
+    void getMothersName();
+    void setMaritalStatus(ItemType MaritalStatus);
+    void getMaritalStatus();
+    void setNationalId(ItemType NationalId);
+    void getNationalId();
+    void setSpouseName(ItemType SpouseName);
+    void getSpouseName();
+    void setPresentAddress(ItemType PresentAddress);
+    void getPresentAddress();
+    void setPermanentAddress(ItemType PermanentAddress);
+    void getPermanentAddress();
+    void setHeight(ItemType Height);
+    void getHeight();
+    void setWeight(ItemType Weight);
+    void getWeight();
+    void setEyeColor(ItemType EyeColor);
+    void getEyeColor();
+    void setHairColor(ItemType HairColor);
+    void getHairColor();
     void PrintAllInformations();
 
 private:

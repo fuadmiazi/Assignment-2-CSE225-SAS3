@@ -26,6 +26,6 @@ Person<ItemType>::~Person()
 
 }
 
-template<class ItemType>
+//template<class ItemType>
 
 
