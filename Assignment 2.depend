@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1541531258 source:g:\study\fall 2018\cse225(sas3)\theory\assignment 2\customer.cpp
+
+1541765026 source:g:\study\fall 2018\cse225(sas3)\theory\assignment 2\main.cpp
+	<iostream>
+	"Person.cpp"
+
+1541765075 source:g:\study\fall 2018\cse225(sas3)\theory\assignment 2\person.cpp
+	"Person.h"
+	<iostream>
+	<string>
+
+1541712622 g:\study\fall 2018\cse225(sas3)\theory\assignment 2\person.h
+	<string>
+
+1541765075 g:\study\fall 2018\cse225(sas3)\theory\assignment 2\person.cpp
+	"Person.h"
+	<iostream>
+	<string>
+

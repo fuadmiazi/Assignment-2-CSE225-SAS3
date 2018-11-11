@@ -1,9 +1,9 @@
 #include <iostream>
+#include "Person.cpp"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
-    return 0;
+    Person<string>FuadList;
 }

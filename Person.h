@@ -1,40 +1,46 @@
 #ifndef PERSON_H_INCLUDED
 #define PERSON_H_INCLUDED
 
+#include<string>
+
+const int MAX_ITEMS = 2;
+
 using namespace std;
 
+template<class ItemType>
 class Person
 {
-private:
-    string customerName;
-    string fathersName;
-    string mothersName;
-    string maritalStatus;
-    string nationalId;
-    string spouseName;
-    string presentAddress;
-    string permanentAddress;
-    string height;
-    string weight;
-    string eyeColor;
-    string hairColor;
-
 public:
     Person();
     ~Person();
-    string setCustomerName(string);
-    string setFathersName(string);
-    string setMothersName(string);
-    string setMaritalStatus(string);
-    string setNationalId(string);
-    string setSpouseName(string);
-    string setPresentAddress(string);
-    string setPermanentAddress(string);
-    string setHeight(string);
-    string setWeight(string);
-    string setEyeColor(string);
-    string setHairColor(string);
+    void setCustomerName();
+    void setFathersName();
+    void setMothersName();
+    void setMaritalStatus();
+    void setNationalId();
+    void setSpouseName();
+    void setPresentAddress();
+    void setPermanentAddress();
+    void setHeight();
+    void setWeight();
+    void setEyeColor();
+    void setHairColor();
     void PrintAllInformations();
+
+private:
+    ItemType customerName;
+    ItemType fathersName;
+    ItemType mothersName;
+    ItemType maritalStatus;
+    ItemType nationalId;
+    ItemType spouseName;
+    ItemType presentAddress;
+    ItemType permanentAddress;
+    ItemType height;
+    ItemType weight;
+    ItemType eyeColor;
+    ItemType hairColor;
+
 
 };
 #endif // PERSON_H_INCLUDED

@@ -1,20 +1,31 @@
 #include "Person.h"
 #include<iostream>
+#include<string>
 
 using namespace std;
 
-Person<string>::Person()
+template<class ItemType>
+Person<ItemType>::Person()
 {
-    customerName = NULL;
-    fathersName = NULL;
-    mothersName = NULL;
-    maritalStatus = NULL;
-    nationalId = NULL;
-    spouseName = NULL;
-    presentAddress = NULL;
-    permanentAddress = NULL;
-    height = NULL;
-    weight = NULL;
-    eyeColor = NULL;
-    hairColor = NULL;
+    customerName = "";
+    fathersName = "";
+    mothersName = "";
+    maritalStatus = "";
+    nationalId = "";
+    spouseName = "";
+    presentAddress = "";
+    permanentAddress = "";
+    height = "";
+    weight = "";
+    eyeColor = "";
+    hairColor = "";
 }
+template<class ItemType>
+Person<ItemType>::~Person()
+{
+
+}
+
+template<class ItemType>
+
+
