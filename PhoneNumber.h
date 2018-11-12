@@ -8,6 +8,7 @@ class PhoneNumber : public Person{
 private:
     ItemType NidNumber;
     ItemType PhoneNumber;
+    //Person<PhoneNumber> number;
 
 public:
     PhoneNumber();

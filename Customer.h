@@ -5,7 +5,8 @@ using namespace std;
 
 class Customer : public Person{
 
-
+private:
+    Person<PhoneNumber> numbers;
 
 };
 
