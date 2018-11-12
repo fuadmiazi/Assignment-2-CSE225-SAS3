@@ -3,19 +3,24 @@
 
 #include<string>
 
-const int MAX_ITEMS = 15;
+//const int MAX_ITEMS = 15;
 
 using namespace std;
 
 template<class ItemType>
 class Person
 {
+    struct NodeType
+    {
+        ItemType info;
+        NodeType* next;
+    };
 public:
     Person();
     ~Person();
     void setCustomerName(ItemType CustomerName);
     ItemType getCustomerName();
-    void setFathersName(ItemType FathersName);
+    /*void setFathersName(ItemType FathersName);
     ItemType getFathersName();
     void setMothersName(ItemType MothersName);
     ItemType getMothersName();
@@ -36,7 +41,7 @@ public:
     void setEyeColor(ItemType EyeColor);
     ItemType getEyeColor();
     void setHairColor(ItemType HairColor);
-    ItemType getHairColor();
+    ItemType getHairColor();*/
     void PrintAllInformations();
 
 private:
