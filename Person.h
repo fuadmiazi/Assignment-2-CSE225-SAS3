@@ -45,18 +45,21 @@ public:
     void PrintAllInformations();
 
 private:
-    ItemType customerName;
-    ItemType fathersName;
-    ItemType mothersName;
-    ItemType maritalStatus;
-    ItemType nationalId;
-    ItemType spouseName;
-    ItemType presentAddress;
-    ItemType permanentAddress;
-    ItemType height;
-    ItemType weight;
-    ItemType eyeColor;
-    ItemType hairColor;
+    int length = 0;
+    NodeType * customerName = NULL;
+    NodeType * fathersName = nullptr;
+    NodeType * mothersName = nullptr;
+    NodeType * maritalStatus = nullptr;
+    NodeType * nationalId = nullptr;
+    NodeType * spouseName = nullptr;
+    NodeType * presentAddress = nullptr;
+    NodeType * permanentAddress = nullptr;
+    NodeType * height = nullptr;
+    NodeType * weight = nullptr;
+    NodeType * eyeColor = nullptr;
+    NodeType * hairColor = nullptr;
+
+    NodeType* currentPos = nullptr;
 
 
 };

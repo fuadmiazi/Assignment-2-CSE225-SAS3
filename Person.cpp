@@ -7,18 +7,18 @@ using namespace std;
 template<class ItemType>
 Person<ItemType>::Person()
 {
-    customerName = '\0';
-    fathersName = '\0';
-    mothersName = '\0';
-    maritalStatus = '\0';
-    nationalId = '\0';
-    spouseName = '\0';
-    presentAddress = '\0';
-    permanentAddress = '\0';
-    height = '\0';
-    weight = '\0';
-    eyeColor = '\0';
-    hairColor = '\0';
+    customerName = NULL;
+    fathersName = nullptr;
+    mothersName = nullptr;
+    maritalStatus = nullptr;
+    nationalId = nullptr;
+    spouseName = nullptr;
+    presentAddress = nullptr;
+    permanentAddress = nullptr;
+    height = nullptr;
+    weight = nullptr;
+    eyeColor = nullptr;
+    hairColor = nullptr;
 }
 template<class ItemType>
 Person<ItemType>::~Person()
@@ -29,13 +29,23 @@ Person<ItemType>::~Person()
 template<class ItemType>
 void Person<ItemType>::setCustomerName(ItemType CustomerName)
 {
-    customerName = CustomerName;
+    //customerName = CustomerName;
+    NodeType* location = new NodeType;
+    location->info = CustomerName;
+    location->next = customerName;
+    customerName = location;
+    length++;
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getCustomerName()
 {
-    return customerName;
+    NodeType* temp = customerName;
+    while(temp!=NULL)
+    {
+        cout<<temp->info;
+        temp = temp ->next;
+    }
 }
 
 

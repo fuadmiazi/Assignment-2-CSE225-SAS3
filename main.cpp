@@ -8,7 +8,8 @@ int main()
     Person<string>FuadList;
 
     FuadList.setCustomerName("Fuad");
-    cout<<FuadList.getCustomerName();
+
+    FuadList.getCustomerName();
 
     return 0;
 }
