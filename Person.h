@@ -2,6 +2,7 @@
 #define PERSON_H_INCLUDED
 
 #include<string>
+#include "UnsortedType.h"
 
 //const int MAX_ITEMS = 15;
 
@@ -17,42 +18,42 @@ public:
     ItemType getCustomerName(ItemType CustomerName, bool &found);
 
     void setFathersName(ItemType FathersName);
-    ItemType getFathersName();
+    ItemType getFathersName(ItemType FathersName, bool &found);
 
     void setMothersName(ItemType MothersName);
-    ItemType getMothersName();
+    ItemType getMothersName(ItemType MothersName, bool &found);
 
     void setMaritalStatus(ItemType MaritalStatus);
-    ItemType getMaritalStatus();
+    ItemType getMaritalStatus(ItemType MaritalStatus, bool &found);
 
     void setNationalId(ItemType NationalId);
-    ItemType getNationalId();
+    ItemType getNationalId(ItemType NationalId, bool &found);
 
     void setSpouseName(ItemType SpouseName);
-    ItemType getSpouseName();
+    ItemType getSpouseName(ItemType SpouseName, bool &found);
 
     void setPresentAddress(ItemType PresentAddress);
-    ItemType getPresentAddress();
+    ItemType getPresentAddress(ItemType PresentAddress, bool &found);
 
     void setPermanentAddress(ItemType PermanentAddress);
-    ItemType getPermanentAddress();
+    ItemType getPermanentAddress(ItemType PermanentAddress, bool &found);
 
     void setHeight(ItemType Height);
-    ItemType getHeight();
+    ItemType getHeight(ItemType Height, bool &found);
 
     void setWeight(ItemType Weight);
-    ItemType getWeight();
+    ItemType getWeight(ItemType Weight, bool &found);
 
     void setEyeColor(ItemType EyeColor);
-    ItemType getEyeColor();
+    ItemType getEyeColor(ItemType EyeColor, bool &found);
 
     void setHairColor(ItemType HairColor);
-    ItemType getHairColor();
+    ItemType getHairColor(ItemType HairColor, bool &found);
 
     void PrintAllInformations();
 
 private:
-    //UnsortedType<Person>Unsort;
+    UnsortedType<Person>Unsort;
     ItemType customerName;
     ItemType fathersName;
     ItemType mothersName;
