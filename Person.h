@@ -14,33 +14,45 @@ public:
     Person();
     ~Person();
     void setCustomerName(ItemType CustomerName);
-    ItemType getCustomerName();
-    /*void setFathersName(ItemType FathersName);
+    ItemType getCustomerName(ItemType CustomerName, bool &found);
+
+    void setFathersName(ItemType FathersName);
     ItemType getFathersName();
+
     void setMothersName(ItemType MothersName);
     ItemType getMothersName();
+
     void setMaritalStatus(ItemType MaritalStatus);
     ItemType getMaritalStatus();
+
     void setNationalId(ItemType NationalId);
     ItemType getNationalId();
+
     void setSpouseName(ItemType SpouseName);
     ItemType getSpouseName();
+
     void setPresentAddress(ItemType PresentAddress);
     ItemType getPresentAddress();
+
     void setPermanentAddress(ItemType PermanentAddress);
     ItemType getPermanentAddress();
+
     void setHeight(ItemType Height);
     ItemType getHeight();
+
     void setWeight(ItemType Weight);
     ItemType getWeight();
+
     void setEyeColor(ItemType EyeColor);
     ItemType getEyeColor();
+
     void setHairColor(ItemType HairColor);
-    ItemType getHairColor();*/
+    ItemType getHairColor();
+
     void PrintAllInformations();
 
 private:
-    //UnsortedType<Person>Unsort
+    //UnsortedType<Person>Unsort;
     ItemType customerName;
     ItemType fathersName;
     ItemType mothersName;

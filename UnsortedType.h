@@ -15,7 +15,7 @@ public:
     bool IsFull();
     int GetLength();
     void MakeEmpty();
-    ItemType GetItem(ItemType, bool&);
+    ItemType GetItem(ItemType, bool& found);
     void PutItem(ItemType);
     bool DeleteItem(ItemType);
     void ResetList();
