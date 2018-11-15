@@ -9,7 +9,8 @@ int main()
 
     FuadList.setCustomerName("Fuad");
 
-    FuadList.getCustomerName();
+  //  FuadList.getCustomerName();
+  //cout<<"Code Runs";
 
     return 0;
 }

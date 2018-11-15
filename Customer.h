@@ -9,5 +9,4 @@ private:
     Person<PhoneNumber> numbers;
 
 };
-
 #endif // CUSTOMER_H_INCLUDED
