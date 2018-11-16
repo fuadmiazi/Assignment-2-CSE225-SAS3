@@ -79,19 +79,6 @@ ItemType Person<ItemType>::getMaritalStatus(ItemType MaritalStatus, bool &found)
     return Unsort.GetItem(MaritalStatus, true);
 }
 
-/*template<class ItemType>
-void Person<ItemType>::setNationalId(ItemType NationalId)
-{
-    NationalId = nationalId;
-    PutItem(NationalId);
-}
-
-template<class ItemType>
-ItemType Person<ItemType>::getNationalId(ItemType NationalId, bool &found)
-{
-    GetItem(NationalId, true);
-}*/
-
 template<class ItemType>
 void Person<ItemType>::setSpouseName(ItemType SpouseName)
 {

@@ -58,7 +58,6 @@ private:
     ItemType fathersName;
     ItemType mothersName;
     ItemType maritalStatus;
-    //ItemType nationalId;
     ItemType spouseName;
     ItemType presentAddress;
     ItemType permanentAddress;

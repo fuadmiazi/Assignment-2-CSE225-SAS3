@@ -31,10 +31,7 @@ struct PhoneNumber
 int main()
 {
 
-    //ItemType a ="Fuad";
     Person<string>PersonList1;
-
-    //Assigning customer 1 info;
 
     Max[0].customerName = "Fuad Hasan";
     Max[0].fathersName = "Abul Khair Miazi";
@@ -156,7 +153,7 @@ int main()
     int choice,choice2;
     string tempPhoneNumber;
     cout<<"Press 1 to see first Customer's information or press 2 to change the operator "<<endl;
-    cin>>choice,choice2;
+    cin>>choice;
 
     if(choice==1)
     {
@@ -185,6 +182,7 @@ int main()
                     cout<<"Input the operator you want to switch to:"<<endl;
                     cin>>NewOperator;
                     Max[0].Operator[index] = NewOperator;
+                    cout<<"Operator changed successfully"<<endl;
                 }
                 else
                     index++;
@@ -204,6 +202,7 @@ int main()
                     cout<<"Input the operator you want to switch to:"<<endl;
                     cin>>NewOperator;
                     Max[1].Operator[index] = NewOperator;
+                    cout<<"Operator changed successfully"<<endl;
                 }
                 else
                     index++;
@@ -211,27 +210,6 @@ int main()
         }
 
     }
-
-   // int choice2;
-   // cout<<"Press 1 to change the operat
-
-
-
-
-
-
-
-
-    //UnsortedType<string>Unsort;
-    //Unsort.PutItem("a");
-    //FuadList.setCustomerName("Fuad");
-
-    //Unsort.PutItem("a");
-
-  //  FuadList.getCustomerName();
-  //cout<<"Code Runs";
-    //FuadList.PrintAllInformations();
-    //Unsort.PrintInfo();
 
     return 0;
 }
