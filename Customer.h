@@ -1,9 +1,12 @@
 #ifndef CUSTOMER_H_INCLUDED
 #define CUSTOMER_H_INCLUDED
 
+#include "UnsortedType.h"
+
 using namespace std;
 template <class ItemType>
-class Customer : public Person{
+class Customer : public Person
+{
 
 public:
     Customer();
@@ -11,11 +14,11 @@ public:
     void setNationalId(ItemType NationalId);
     ItemType getNationalId(ItemType NationalId, bool &found);
 
-    void setphoneNumber(ItemType PhoneNumber);
+    void setPhoneNumber(ItemType PhoneNumber);
     ItemType getPhoneNumber(ItemType PhoneNumber, bool &found);
 
 private:
-    Person<PhoneNumber> numbers;
+    UnsortedType<Customer> numbers;
     ItemType nidNumber;
     ItemType phoneNumber;
 

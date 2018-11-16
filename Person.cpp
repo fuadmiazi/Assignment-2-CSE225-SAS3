@@ -37,46 +37,46 @@ void Person<ItemType>::setCustomerName(ItemType CustomerName)
 template<class ItemType>
 ItemType Person<ItemType>::getCustomerName(ItemType CustomerName, bool &found)
 {
-    GetItem(CustomerName, true);
+    return Unsort.GetItem(CustomerName, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setFathersName(ItemType FathersName)
 {
     FathersName = fathersName;
-    PutItem(FathersName);
+    Unsort.PutItem(FathersName);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getFathersName(ItemType FathersName, bool &found)
 {
-    GetItem(FathersName, true);
+   return Unsort.GetItem(FathersName, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setMothersName(ItemType MothersName)
 {
     MothersName = mothersName;
-    PutItem(MothersName);
+    Unsort.PutItem(MothersName);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getMothersName(ItemType MothersName, bool &found)
 {
-    GetItem(MothersName, true);
+    return Unsort.GetItem(MothersName, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setMaritalStatus(ItemType MaritalStatus)
 {
     MaritalStatus = maritalStatus;
-    PutItem(MaritalStatus);
+    Unsort.PutItem(MaritalStatus);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getMaritalStatus(ItemType MaritalStatus, bool &found)
 {
-    GetItem(MaritalStatus, true);
+    return Unsort.GetItem(MaritalStatus, true);
 }
 
 /*template<class ItemType>
@@ -96,91 +96,91 @@ template<class ItemType>
 void Person<ItemType>::setSpouseName(ItemType SpouseName)
 {
     SpouseName = spouseName;
-    PutItem(SpouseName);
+    Unsort.PutItem(SpouseName);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getSpouseName(ItemType SpouseName, bool &found)
 {
-    GetItem(SpouseName, true);
+    return Unsort.GetItem(SpouseName, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setPresentAddress(ItemType PresentAddress)
 {
     PresentAddress = presentAddress;
-    PutItem(PresentAddress);
+    Unsort.PutItem(PresentAddress);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getPresentAddress(ItemType PresentAddress, bool &found)
 {
-    GetItem(PresentAddress, true);
+    return Unsort.GetItem(PresentAddress, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setPermanentAddress(ItemType PermanentAddress)
 {
     PermanentAddress = permanentAddress;
-    PutItem(PermanentAddress);
+    Unsort.PutItem(PermanentAddress);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getPermanentAddress(ItemType PermanentAddress, bool &found)
 {
-    GetItem(PermanentAddress, true);
+    return Unsort.GetItem(PermanentAddress, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setHeight(ItemType Height)
 {
     Height = height;
-    PutItem(Height);
+    Unsort.PutItem(Height);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getHeight(ItemType Height, bool &found)
 {
-    GetItem(Height, true);
+    return Unsort.GetItem(Height, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setWeight(ItemType Weight)
 {
     Weight = weight;
-    PutItem(Weight);
+    Unsort.PutItem(Weight);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getWeight(ItemType Weight, bool &found)
 {
-    GetItem(Weight, true);
+    return Unsort.GetItem(Weight, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setEyeColor(ItemType EyeColor)
 {
     EyeColor = eyeColor;
-    PutItem(EyeColor);
+    Unsort.PutItem(EyeColor);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getEyeColor(ItemType EyeColor, bool &found)
 {
-    GetItem(EyeColor, true);
+    return Unsort.GetItem(EyeColor, true);
 }
 
 template<class ItemType>
 void Person<ItemType>::setHairColor(ItemType HairColor)
 {
     HairColor = hairColor;
-    PutItem(HairColor);
+    Unsort.PutItem(HairColor);
 }
 
 template<class ItemType>
 ItemType Person<ItemType>::getHairColor(ItemType HairColor, bool &found)
 {
-    GetItem(HairColor, true);
+    return Unsort.GetItem(HairColor, true);
 }
 
 
