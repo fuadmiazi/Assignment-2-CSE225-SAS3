@@ -37,4 +37,10 @@ void Company<ItemType>::changeOperatorName(ItemType NewOperatorName)
     NewOperatorName = operatorName;
 }
 
+template<class ItemType>
+void Company<ItemType>::PrintAllCompany()
+{
+    comp.PrintInfo();
+}
+
 

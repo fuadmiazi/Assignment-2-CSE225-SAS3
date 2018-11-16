@@ -40,7 +40,7 @@ int main()
     Max[0].fathersName = "Abul Khair Miazi";
     Max[0].mothersName = "Fahmida Azad";
     Max[0].maritalStatus = "Single";
-    Max[0].nationalId = "123456789011";
+    Max[0].nationalId = "12345678901";
     Max[0].spouseName ="It's Complicated";
     Max[0].presentAddress = "Dhaka, Bangladesh";
     Max[0].permanentAddress = "Dhaka, Bangladesh";
@@ -101,7 +101,7 @@ int main()
     Max[1].fathersName = "Goni Mia";
     Max[1].mothersName = "Rohima Begum";
     Max[1].maritalStatus = "Married";
-    Max[1].nationalId = "123456786757843";
+    Max[1].nationalId = "12345678635";
     Max[1].spouseName ="Fatema Begum";
     Max[1].presentAddress = "United States of America";
     Max[1].permanentAddress = "Saudi Arabia";
@@ -152,6 +152,69 @@ int main()
     CompanyInfo2.setOperatorsName(Max[1].Operator[3]);
     CompanyInfo2.setOperatorsName(Max[1].Operator[4]);
     CompanyInfo2.setOperatorsName(Max[1].Operator[5]);
+
+    int choice,choice2;
+    string tempPhoneNumber;
+    cout<<"Press 1 to see first Customer's information or press 2 to change the operator "<<endl;
+    cin>>choice,choice2;
+
+    if(choice==1)
+    {
+        PersonList1.PrintAllInformations();
+        CustomerInfo1.PrintAllCustomer();
+        CompanyInfo1.PrintAllCompany();
+
+        PersonList2.PrintAllInformations();
+        CustomerInfo2.PrintAllCustomer();
+        CompanyInfo2.PrintAllCompany();
+    }
+    else
+    {
+        int index=0;
+        cout<<"Press 1 to change first customers number or press 2 to chsnge second customers number:"<<endl;
+        cin>>choice2;
+        if(choice2==1)
+        {
+            cout<<"Input the number you want to change: "<<endl;
+            cin>>tempPhoneNumber;
+            while(Max[0].PhoneNumber[index]!= nullptr)
+            {
+                if(Max[0].PhoneNumber[index] == tempPhoneNumber)
+                {
+                    string NewOperator;
+                    cout<<"Input the operator you want to switch to:"<<endl;
+                    cin>>NewOperator;
+                    Max[0].Operator[index] = NewOperator;
+                }
+                else
+                    index++;
+            }
+
+
+        }
+        else
+        {
+            cout<<"Input the number you want to change: "<<endl;
+            cin>>tempPhoneNumber;
+            while(Max[1].PhoneNumber[index]!= nullptr)
+            {
+                if(Max[1].PhoneNumber[index] == tempPhoneNumber)
+                {
+                    string NewOperator;
+                    cout<<"Input the operator you want to switch to:"<<endl;
+                    cin>>NewOperator;
+                    Max[1].Operator[index] = NewOperator;
+                }
+                else
+                    index++;
+            }
+        }
+
+    }
+
+   // int choice2;
+   // cout<<"Press 1 to change the operat
+
 
 
 

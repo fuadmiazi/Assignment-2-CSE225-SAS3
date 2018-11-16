@@ -19,6 +19,10 @@ public:
     void setPhoneNumber(ItemType PhoneNumber);
     ItemType getPhoneNumber(ItemType PhoneNumber, bool &found);
 
+    void registerNewNumber(ItemType newNumber);
+
+    void PrintAllCustomer();
+
 private:
     UnsortedType<Customer> numbers;
     ItemType nidNumber;

@@ -45,4 +45,15 @@ ItemType Customer<ItemType>::getPhoneNumber(ItemType PhoneNumber, bool &found)
     return numbers.GetItem(PhoneNumber, true);
 }
 
+template<class ItemType>
+void Customer<ItemType>::registerNewNumber(ItemType newNumber)
+{
+    newNumber = phoneNumber;
+}
+
+template<class ItemType>
+void Customer<ItemType>::PrintAllCustomer()
+{
+    numbers.PrintInfo();
+}
 

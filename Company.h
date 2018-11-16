@@ -16,6 +16,7 @@ public:
     void setOperatorsName(ItemType OperatorName);
     ItemType getOperatorsName(ItemType OperatorName, bool &found);
     void changeOperatorName(ItemType NewOperatorName);
+    void PrintAllCompany();
 private:
     UnsortedType<Company>comp;
     ItemType operatorName;
