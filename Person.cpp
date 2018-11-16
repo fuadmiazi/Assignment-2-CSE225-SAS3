@@ -9,16 +9,28 @@ using namespace std;
 template<class ItemType>
 Person<ItemType>::Person()
 {
-
+    customerName = nullptr;
+    fathersName = nullptr;
+    mothersName = nullptr;
+    maritalStatus = nullptr;
+    //nationalId = nullptr;
+    spouseName = nullptr;
+    presentAddress = nullptr;
+    permanentAddress = nullptr;
+    height = nullptr;
+    weight = nullptr;
+    eyeColor = nullptr;
+    hairColor = nullptr;
 }
 template<class ItemType>
 Person<ItemType>::~Person()
 {
-
+    Unsort.MakeEmpty();
 }
 template<class ItemType>
 void Person<ItemType>::setCustomerName(ItemType CustomerName)
 {
+    CustomerName = customerName;
     Unsort.PutItem(CustomerName);
 }
 
@@ -31,6 +43,7 @@ ItemType Person<ItemType>::getCustomerName(ItemType CustomerName, bool &found)
 template<class ItemType>
 void Person<ItemType>::setFathersName(ItemType FathersName)
 {
+    FathersName = fathersName;
     PutItem(FathersName);
 }
 
@@ -43,6 +56,7 @@ ItemType Person<ItemType>::getFathersName(ItemType FathersName, bool &found)
 template<class ItemType>
 void Person<ItemType>::setMothersName(ItemType MothersName)
 {
+    MothersName = mothersName;
     PutItem(MothersName);
 }
 
@@ -55,6 +69,7 @@ ItemType Person<ItemType>::getMothersName(ItemType MothersName, bool &found)
 template<class ItemType>
 void Person<ItemType>::setMaritalStatus(ItemType MaritalStatus)
 {
+    MaritalStatus = maritalStatus;
     PutItem(MaritalStatus);
 }
 
@@ -64,9 +79,10 @@ ItemType Person<ItemType>::getMaritalStatus(ItemType MaritalStatus, bool &found)
     GetItem(MaritalStatus, true);
 }
 
-template<class ItemType>
+/*template<class ItemType>
 void Person<ItemType>::setNationalId(ItemType NationalId)
 {
+    NationalId = nationalId;
     PutItem(NationalId);
 }
 
@@ -74,11 +90,12 @@ template<class ItemType>
 ItemType Person<ItemType>::getNationalId(ItemType NationalId, bool &found)
 {
     GetItem(NationalId, true);
-}
+}*/
 
 template<class ItemType>
 void Person<ItemType>::setSpouseName(ItemType SpouseName)
 {
+    SpouseName = spouseName;
     PutItem(SpouseName);
 }
 
@@ -91,6 +108,7 @@ ItemType Person<ItemType>::getSpouseName(ItemType SpouseName, bool &found)
 template<class ItemType>
 void Person<ItemType>::setPresentAddress(ItemType PresentAddress)
 {
+    PresentAddress = presentAddress;
     PutItem(PresentAddress);
 }
 
@@ -103,6 +121,7 @@ ItemType Person<ItemType>::getPresentAddress(ItemType PresentAddress, bool &foun
 template<class ItemType>
 void Person<ItemType>::setPermanentAddress(ItemType PermanentAddress)
 {
+    PermanentAddress = permanentAddress;
     PutItem(PermanentAddress);
 }
 
@@ -115,6 +134,7 @@ ItemType Person<ItemType>::getPermanentAddress(ItemType PermanentAddress, bool &
 template<class ItemType>
 void Person<ItemType>::setHeight(ItemType Height)
 {
+    Height = height;
     PutItem(Height);
 }
 
@@ -127,6 +147,7 @@ ItemType Person<ItemType>::getHeight(ItemType Height, bool &found)
 template<class ItemType>
 void Person<ItemType>::setWeight(ItemType Weight)
 {
+    Weight = weight;
     PutItem(Weight);
 }
 
@@ -139,6 +160,7 @@ ItemType Person<ItemType>::getWeight(ItemType Weight, bool &found)
 template<class ItemType>
 void Person<ItemType>::setEyeColor(ItemType EyeColor)
 {
+    EyeColor = eyeColor;
     PutItem(EyeColor);
 }
 
@@ -151,6 +173,7 @@ ItemType Person<ItemType>::getEyeColor(ItemType EyeColor, bool &found)
 template<class ItemType>
 void Person<ItemType>::setHairColor(ItemType HairColor)
 {
+    HairColor = hairColor;
     PutItem(HairColor);
 }
 
@@ -170,7 +193,7 @@ ItemType Person<ItemType>::getHairColor(ItemType HairColor, bool &found)
 template<class ItemType>
 void Person<ItemType>::PrintAllInformations()
 {
-    PrintInfo(PrintAllInformations());
+    Unsort.PrintInfo();
 }
 
 

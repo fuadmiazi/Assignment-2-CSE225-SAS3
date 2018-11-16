@@ -12,8 +12,8 @@ class UnsortedType
 public:
     UnsortedType();
     ~UnsortedType();
-    bool IsFull();
-    int GetLength();
+    //bool IsFull();
+    //int GetLength();
     void MakeEmpty();
     ItemType GetItem(ItemType, bool& found);
     void PutItem(ItemType);

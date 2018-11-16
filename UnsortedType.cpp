@@ -1,6 +1,7 @@
 #include "UnsortedType.h"
 #include <iostream>
 #include <exception>
+#include <string>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ UnsortedType<ItemType>::UnsortedType()
     currentPos = NULL;
 }
 
-template <class ItemType>
+/*template <class ItemType>
 int UnsortedType<ItemType>::GetLength()
 {
     return length;
@@ -32,7 +33,7 @@ bool UnsortedType<ItemType>::IsFull()
         return true;
     }
     return false;
-}
+}*/
 
 template <class ItemType>
 void UnsortedType<ItemType>::PutItem(ItemType item)

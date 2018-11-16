@@ -11,13 +11,19 @@ using namespace std;
 
 int main()
 {
-    Person<string>FuadList;
 
+    //ItemType a ="Fuad";
+    Person<string>FuadList;
+    //UnsortedType<string>Unsort;
+    //Unsort.PutItem("a");
     //FuadList.setCustomerName("Fuad");
+
+    //Unsort.PutItem("a");
 
   //  FuadList.getCustomerName();
   //cout<<"Code Runs";
     //FuadList.PrintAllInformations();
+    //Unsort.PrintInfo();
 
     return 0;
 }

@@ -26,8 +26,8 @@ public:
     void setMaritalStatus(ItemType MaritalStatus);
     ItemType getMaritalStatus(ItemType MaritalStatus, bool &found);
 
-    void setNationalId(ItemType NationalId);
-    ItemType getNationalId(ItemType NationalId, bool &found);
+   // void setNationalId(ItemType NationalId);
+    //ItemType getNationalId(ItemType NationalId, bool &found);
 
     void setSpouseName(ItemType SpouseName);
     ItemType getSpouseName(ItemType SpouseName, bool &found);
@@ -58,7 +58,7 @@ private:
     ItemType fathersName;
     ItemType mothersName;
     ItemType maritalStatus;
-    ItemType nationalId;
+    //ItemType nationalId;
     ItemType spouseName;
     ItemType presentAddress;
     ItemType permanentAddress;
