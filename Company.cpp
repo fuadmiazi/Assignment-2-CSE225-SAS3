@@ -9,13 +9,13 @@ using namespace std;
 template<class ItemType>
 Company<ItemType>::Company()
 {
-
+    operatorName = nullptr;
 }
 
 template<class ItemType>
 Company<ItemType>::~Company()
 {
-
+    comp.MakeEmpty();
 }
 
 template<class ItemType>

@@ -9,8 +9,8 @@ using namespace std;
 template<class ItemType>
 Customer<ItemType>::Customer()
 {
-    //nidNumber = nullptr;
-    //phoneNumbeer = nullptr;
+    nidNumber = nullptr;
+    phoneNumbeer = nullptr;
 }
 
 template<class ItemType>
