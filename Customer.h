@@ -2,6 +2,8 @@
 #define CUSTOMER_H_INCLUDED
 
 #include "UnsortedType.h"
+#include "Person.h"
+#include "Person.cpp"
 
 using namespace std;
 template <class ItemType>
